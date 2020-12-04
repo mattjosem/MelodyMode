@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>MelodyMode</title>
+      <script src="https://tonejs.github.io/build/Tone.js"></script>
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+   </head>
+   <body>
+      <form class=question_answer_shell>
+         <label class="question" for="rootNote">Choose Root Note</label>
+         <select class="selection" name="rootNote" id="root">
+            <option class="choice" value="C">C</option>
+            <option class="choice" value="C#">C#</option>
+            <option class="choice" value="D">D</option>
+            <option class="choice" value="D#">D#</option>
+            <option class="choice" value="E">E</option>
+            <option class="choice" value="F">F</option>
+            <option class="choice" value="F#">F#</option>
+            <option class="choice" value="G">G</option>
+            <option class="choice" value="G#">G#</option>
+            <option class="choice" value="A">A</option>
+            <option class="choice" value="A#">A#</option>
+            <option class="choice" value="B">B</option>
+         </select>
+      </form>
+      <form class=question_answer_shell>
+         <label class="question" for="chosenMode">Choose Mode</label>
+         <select class="selection" name="chosenMode" id="mode">
+            <option class="choice" value="Ionian">Ionian (Major)</option>
+            <option class="choice" value="Dorian">Dorian</option>
+            <option class="choice" value="Phrygian">Phrygian</option>
+            <option class="choice" value="Lydian">Lydian</option>
+            <option class="choice" value="Mixolydian">Mixolydian</option>
+            <option class="choice" value="Aeolian">Aeolian (Minor)</option>
+            <option class="choice" value="Locrian">Locrian</option>
+         </select>
+      </form>
+      <form class=question_answer_shell>
+         <label class="question" for="chosenOctave">Choose Starting Octave</label>
+         <select class="selection" name="chosenOctave" id="octave">
+            <option class="choice" value="2">2</option>
+            <option class="choice" value="3">3</option>
+            <option class="choice" value="4">4</option>
+            <option class="choice" value="5">5</option>
+         </select>
+      </form>
+      <form class=question_answer_shell>
+         <label class="question" for="chosenDelay">Choose Length of Notes (in seconds)</label>
+         <select class="selection" name="chosenDelay" id="delay">
+            <option class="choice" value=".2">.2</option>
+            <option class="choice" value=".4">.4</option>
+            <option class="choice" value=".6">.6</option>
+            <option class="choice" value=".8">.8</option>
+            <option class="choice" value="1">1</option>
+         </select>
+      </form>
+      <div class="button_div">
+         <button class="play_button" id='playButton'>Play mode</button>
+      </div>
+      <table class="scale_table" id="modeTable" style="visibility:hidden">
+         <tr>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+            <td class="note_box"></td>
+         </tr>
+      </table>
+   </body>
+   <script src="./main.js"></script>
+</html>
