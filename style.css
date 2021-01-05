@@ -79,14 +79,16 @@ body {
 
 .fretboard {
     background: white;
-    width: 90%;
+    width: fit-content;
     margin: 12px auto 24px;
     text-align: center;
+    
+
 }
 
 #score {
     background-color: white;
-    width: 80%;
+    width: fit-content;
     margin: 12px auto 12px;
     padding: 12px;
     text-align: center;
