@@ -81,6 +81,7 @@ body {
     background: white;
     width: 90%;
     margin: 12px auto 24px;
+    text-align: center;
 }
 
 #score {
@@ -88,4 +89,5 @@ body {
     width: 80%;
     margin: 12px auto 12px;
     padding: 12px;
+    text-align: center;
 }
