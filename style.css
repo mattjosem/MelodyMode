@@ -11,15 +11,15 @@ body {
 .question_answer_shell {
     background: linear-gradient(-45deg, rgb(49, 80, 114), rgb(20, 30, 49));
     border: 2px solid rgb(13, 20, 34);
-    padding: 24px;
-    margin: 12px auto;
+    padding: 12px;
+    margin: 6px auto;
     width: fit-content;
 }
 
 .question,
 .selection,
 .choice {
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: lighter;
 }
 
@@ -49,7 +49,7 @@ body {
     background-color: rgb(255, 234, 139);
     font-size: 24pt;
     font-weight: normal;
-    margin: 12px auto;
+    margin: 6px auto;
 }
 
 .play_button:hover {
@@ -59,20 +59,33 @@ body {
 
 .scale_table {
     width: 90%;
-    margin: 12px auto;
+    margin: auto;
 }
 
 .note_box {
     text-align: center;
     margin: auto; 
-    font-size: 64pt;
+    font-size: 56pt;
     font-weight: lighter;
     border: 2px solid black;
     background-color: rgb(255, 242, 184);
-    padding: 24px;
-    width: 150px;
+    padding: 20px;
+    width: 140px;
 }
 
 .button_div {
     text-align: center;
+}
+
+.fretboard {
+    background: white;
+    width: 90%;
+    margin: 12px auto 24px;
+}
+
+#score {
+    background-color: white;
+    width: 80%;
+    margin: 12px auto 12px;
+    padding: 12px;
 }
